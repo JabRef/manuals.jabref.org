@@ -1,3 +1,8 @@
+# somehow generated
+*.stc*
+# by jurabib
+*.url
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
