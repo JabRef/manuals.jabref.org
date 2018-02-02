@@ -6,5 +6,5 @@ jobs:
      steps:
        - checkout
        - run: cd de && latexmk JabRef-UserManual_de.tex
-       - run: mkdir build && mv de/JabRef-UserManual_de.pdf build/ && mkdir build && cp -r .github/* build/
+       - run: mkdir build && mv de/JabRef-UserManual_de.pdf build/ && cp -r .github/* build/
        - run: if [ "$CIRCLE_BRANCH" == "master" ]; then .circleci/deploy-ghpages.sh build/; fi
